@@ -1,0 +1,181 @@
+
+
+/* Estilos del Hero */
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__bg {
+    background-image: url("../img/hero.png");
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__contenido {
+    background-color: var(--beige-400);
+    color: var(--gray);
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    align-content: center;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hero__titulo {
+    font-size: var(--font-h1);
+    line-height: 3;
+}
+
+
+.hero__body {
+    font-size: var(--font-body);
+    line-height: 1.8;
+}
+
+
+
+
+/* Estilos de Galería */
+
+.galeria {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria__texto {
+    margin-top: 24px;
+    margin-bottom: 48px;
+
+}
+
+.galeria__textoTitulo {
+    font-size: var(--font-h2);
+    line-height: 1.6;
+    color: var(--gray);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.galeria__textoSubtitulo {
+    font-size: var(--font-body);
+    line-height: 3;
+    color: var(--gray);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card__content{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
+.card__img {
+    height: 200px;
+    width: 200px;
+    border-radius: 22px 22px 0px 0px;
+}
+
+.card__tittle {
+    font-size: var(--font-h3);
+    color: var(--gray);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+}
+
+.button {
+    background-color: var(--beige-900);
+    padding: 10px 24px;
+    color: var(--white);
+    border-radius: 12px;
+    border:1px solid var(--beige-400);
+    box-shadow: var(--box-shadow);
+    
+}
+
+.card__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-content: center;
+    padding: 12px;
+}
+
+.card {
+    border: 2px solid var(--beige-900);
+    border-radius: 24px;
+    box-shadow: var(--box-shadow);
+}
+
+
+/* Media queries */
+
+/* Estilos del Hero para pantallas grandes */
+
+@media (min-width: 1182px) {
+
+    .hero {
+        position: relative;
+        height: 80vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        padding-right: 1.5rem;
+
+    }
+
+
+    .hero__bg {
+        position: absolute;
+        background-image: url("../img/hero.png");
+        top: -20%;/*empezar un poco más arriba para tener margen de movimiento */
+        left: 0;
+        width: 100%;
+        height: 180%;
+        background-size: cover;
+        background-position: center;
+
+
+    }
+
+
+    .hero__contenido {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        background-color: var(--beige-400);
+        color: var(--gray);
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        opacity: 0.9;
+        padding: 60px;
+        width: 40%;
+        height: 100%;
+        box-shadow: var(--box-shadow);
+
+
+    }
+
+
+    .hero__titulo {
+        font-size: var(--font-h1);
+        line-height: 3;
+    }
+
+    .hero__body {
+        font-size: var(--font-body);
+        line-height: 1.8;
+    }
+
+
+}

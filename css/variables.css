@@ -1,0 +1,27 @@
+/* ----------------------------------*/
+/*        VARIABLES DE CSS           */
+/* ----------------------------------*/
+
+:root {
+    /* Paleta de colores */
+    --white: #FFFFFF;
+    --beige-400: #F3EFEA;
+    --beige-600: #EAE3D9;
+    --beige-900: #90837A;
+    --grey: #4D4D4D;
+
+    /* Sombra */
+    --box-shadow: 1px 1px 3px rgba(156, 156, 156, 0.539);
+
+    /* Tipografía */
+
+    --font-body: 1rem;        /* tamaño 16px */
+    --font-h1: 2.5rem;        /* tamaño 40px */
+    --font-h2: 2rem;          /* tamaño 32px */
+    --font-h3: 1.5rem;        /* tamaño 24px */
+    --font-button: 0.875rem;  /* tamaño 14px */
+
+    
+
+
+}
