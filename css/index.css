@@ -87,6 +87,7 @@
     color: var(--gray);
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    
 
 }
 
@@ -97,6 +98,7 @@
     border-radius: 12px;
     border:1px solid var(--beige-400);
     box-shadow: var(--box-shadow);
+    width: 100%;
     
 }
 
@@ -138,7 +140,7 @@
     .hero__bg {
         position: absolute;
         background-image: url("../img/hero.png");
-        top: -20%;/*empezar un poco más arriba para tener margen de movimiento */
+        top: -20%;/*empezar un poco más arriba para tener margen de movimiento para parallax*/
         left: 0;
         width: 100%;
         height: 180%;
