@@ -34,37 +34,43 @@
 /* Estilos de las pestañas */
 
 .main {
+    max-width: 700px;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 24px;
+
     font-family: 'Montserrat', sans-serif;
     font-size: var(--font-body);
     color: var(--gray);
     line-height: 1.8;
 
+    padding: 0 1rem;
+    margin: 0 auto;   
+
 }
 
 .pestanas {
-    border: 2px solid var(--beige-600);
+    border: 1px solid var(--beige-600);
     box-shadow: var(--box-shadow);
     border-radius: 12px;
-    margin: 1rem;
-    padding: 24px;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 100%;    
     margin: 24px;
+    padding: 24px;
+    
 
 }
 
 .tabs {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 24px;
 
 }
 
@@ -78,7 +84,7 @@
     color: var(--beige-900)
 }
 
-.tab.abierta {
+.tab.abierto {
     border: 3px solid var(--beige-600);
     font-weight: bold;
     box-shadow: var(--box-shadow);
@@ -86,13 +92,13 @@
     color: var(--gray)
 }
 
-.content {
+.contenido {
     display: none;
     padding: 20px;
 
 }
 
-.content.abierto {
+.contenido.abierto {
     display: block;
 }
 
@@ -110,3 +116,4 @@
     margin-bottom: 48px;
     
 }
+

@@ -1,17 +1,46 @@
 
-//Pestañas estados
+// ------------------------------------------------------------
+// Script para Pestañas (tabs) en las páginas de los relatos
+// ------------------------------------------------------------
 
-const tabs = document.querySelectorAll(".tab");
-const contents = document.querySelectorAll(".content");
+const listaTabs = document.querySelectorAll(".tab");
+const listaBloques = document.querySelectorAll(".contenido");
 
-tabs.forEach(tab => {
+
+listaTabs.forEach((tab, idx) => {
+    // console.log(tab);
+    // posición lista de Tabs
+    console.log(listaTabs[idx]);
+    console.log(listaBloques[idx]);
+
     tab.addEventListener("click", () => {
-        // Remover la clase 'abierto' de todas las pestañas y contenidos
-        tabs.forEach(tab => tab.classList.remove("abierta"));
-        contents.forEach(content => content.classList.remove("abierto"));
+        // a todos los bloques sacamos la clase .abierto 
+        listaBloques.forEach((bloque, i) => {
+            bloque.classList.remove("abierto");
+            listaTabs[i].classList.remove("abierto");
+        });
 
-        // Activar la pestaña y el contenido correspondiente
-        tab.classList.add("abierta");
-        document.getElementById(`content-${tab.dataset.tab}`).classList.add("abierto");
-    });
+
+        // y agregamos la clase .abierto al bloque que nos interesa
+
+        listaBloques[idx].classList.add("abierto");
+        listaTabs[idx].classList.add("abierto");
+
+    })
 });
+
+// ------------------------------------------------------------
+//     Script para Acordeón en la página de viajar a USA
+// ------------------------------------------------------------
+
+
+
+const lista_items = document.querySelectorAll('.acordeon__item');
+
+
+        lista_items.forEach(item => {
+            item.addEventListener("click", () => {
+                item.classList.toggle("open");
+            });
+        });
+
