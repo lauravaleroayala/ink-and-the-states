@@ -3,13 +3,12 @@
 
 .top {
     margin-top: 80px;
-    padding: 64px 24px;
-    text-align: center;
+    padding: 40px 24px 12px;
+    text-align: left;
 }
 
 .top__tittle {
     font-size: var(--font-h3);
-    line-height: 1.6;
     color: var(--gray);
     font-family: 'Montserrat', sans-serif;
 }

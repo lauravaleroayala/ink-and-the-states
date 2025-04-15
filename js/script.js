@@ -1,7 +1,7 @@
 
-// ------------------------------------------------------------
+// ------------------------------------------------------------------------
 // Script para Pestañas (tabs) en las páginas de los relatos
-// ------------------------------------------------------------
+// ------------------------------------------------------------------------
 
 const listaTabs = document.querySelectorAll(".tab");
 const listaBloques = document.querySelectorAll(".contenido");
@@ -29,18 +29,53 @@ listaTabs.forEach((tab, idx) => {
     })
 });
 
-// ------------------------------------------------------------
+// ------------------------------------------------------------------------
 //     Script para Acordeón en la página de viajar a USA
-// ------------------------------------------------------------
+// ------------------------------------------------------------------------
 
 
 
 const lista_items = document.querySelectorAll('.acordeon__item');
 
 
-        lista_items.forEach(item => {
-            item.addEventListener("click", () => {
-                item.classList.toggle("open");
-            });
-        });
+lista_items.forEach(item => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("open");
+    });
+});
+
+
+
+// ------------------------------------------------------------------------
+//     Script para efecto Parallax en la img del hero de index.html (Home)
+// ------------------------------------------------------------------------
+
+function ParallaxEffect() {
+    const parallaxBg = document.querySelector("#parallax__bg");
+    
+
+
+    window.addEventListener('scroll', () => {
+        let scrollPos = window.scrollY;
+        console.log(scrollPos);
+        //mover el fondo
+        //velocidad 0.3 significa que se mueve al 30% de la velocidad del scroll
+        parallaxBg.style.transform = `translateY(${scrollPos * 0.5}px) `;
+
+
+
+
+    });
+
+
+}
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    //no aplicar efectos
+    console.log("No aplicar parallax");
+
+} else {
+    //aplicar efectos de parallax
+    ParallaxEffect();
+    console.log("Aplicar parallax");
+}
 

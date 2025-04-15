@@ -47,6 +47,7 @@
     align-items: center;
     padding: 1.5rem;
     width: 100%;
+    
 
 }
 
@@ -71,6 +72,29 @@
     font-weight: 400;
 }
 
+/* Estilos de los botones */
+
+.button {
+    background-color: var(--beige-900);
+    padding: 10px 24px;
+    color: var(--white);
+    border-radius: 12px;
+    border:1px solid var(--beige-400);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    
+}
+
+
+.button--secondary {
+    background-color: var(--beige-400);
+    color: var(--gray);
+    border:1px solid var(--beige-600);
+    
+}
+
+
+
 
 /* Estilos de los hover */
 
@@ -87,4 +111,13 @@ button:hover {
     box-shadow: 1px 1px 5px rgba(118, 118, 118, 0.539);
     cursor: pointer;
 
+}
+
+
+
+.button--secondary:hover {
+    font-weight: 600;
+    color: var(--beige-900);
+    box-shadow: 1px 1px 5px rgba(118, 118, 118, 0.539);
+    cursor: pointer;
 }
