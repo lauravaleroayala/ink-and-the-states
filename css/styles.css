@@ -88,7 +88,7 @@
 
 .button--secondary {
     background-color: var(--beige-400);
-    color: var(--gray);
+    color: var(--beige-900);
     border:1px solid var(--beige-600);
     
 }
@@ -120,4 +120,12 @@ button:hover {
     color: var(--beige-900);
     box-shadow: 1px 1px 5px rgba(118, 118, 118, 0.539);
     cursor: pointer;
+}
+
+
+
+/* Estilos generales */
+
+strong {
+    color: var(--beige-900)
 }
