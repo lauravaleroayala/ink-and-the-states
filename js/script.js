@@ -52,16 +52,15 @@ lista_items.forEach(item => {
 
 function ParallaxEffect() {
     const parallaxBg = document.querySelector("#parallax__bg");
-    
+
 
 
     window.addEventListener('scroll', () => {
         let scrollPos = window.scrollY;
         console.log(scrollPos);
         //mover el fondo
-        //velocidad 0.3 significa que se mueve al 30% de la velocidad del scroll
+        //velocidad 0.5 significa que se mueve al 30% de la velocidad del scroll
         parallaxBg.style.transform = `translateY(${scrollPos * 0.5}px) `;
-
 
 
 
@@ -69,8 +68,10 @@ function ParallaxEffect() {
 
 
 }
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    //no aplicar efectos
+
+
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !window.matchMedia('(min-width: 1182px)').matches) {
+   // no aplicar efectos de parallax si está en una pantalla pequeña o se ha elegido la opción de reducir animaciones
     console.log("No aplicar parallax");
 
 } else {

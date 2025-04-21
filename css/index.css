@@ -7,17 +7,19 @@
     display: flex;
     flex-direction:column;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     overflow: hidden;
+    
     
 }
 
-.hero__bg {
+ .hero__bg {
     background-image: url("../img/hero.png");
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-size: cover;
     background-position: center;
+   
 }
 
 .hero__contenido {
@@ -27,8 +29,10 @@
     text-align: left;
     align-content: center;
     padding: 24px;
+    padding-bottom: 40px;
     width: 100%;
-    height: 100%;
+    height: 100%; 
+   
 
 }
 
@@ -42,11 +46,11 @@
     font-size: var(--font-body);
     line-height: 1.8;
 }
+ 
 
 
 
-
-/* Estilos de Galería */
+/* Estilos de Galería / Carrousel */
 
 .galeria {
     padding: 24px;
@@ -73,11 +77,31 @@
     color: var(--gray);
     font-family: 'Montserrat', sans-serif;
 }
-
-.card__content{
+ 
+.carrousel {
+    position: relative;
     display: flex;
+    gap: 80px;
+    
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+
     justify-content: center;
     padding-bottom: 120px;
+}
+
+
+
+
+/* Estilos de la Card */
+
+
+.card {
+    border: 2px solid var(--beige-900);
+    border-radius: 24px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
 }
 
 .card__img {
@@ -95,17 +119,6 @@
 
 }
 
-.button {
-    background-color: var(--beige-900);
-    padding: 10px 24px;
-    color: var(--white);
-    border-radius: 12px;
-    border:1px solid var(--beige-400);
-    box-shadow: var(--box-shadow);
-    width: 100%;
-    
-}
-
 .card__bottom {
     display: flex;
     flex-direction: column;
@@ -115,18 +128,13 @@
     padding: 12px;
 }
 
-.card {
-    border: 2px solid var(--beige-900);
-    border-radius: 24px;
-    box-shadow: var(--box-shadow);
-}
 
 
 /* Media queries */
 
 /* Estilos del Hero para pantallas grandes */
 
-@media (min-width: 1182px) {
+ @media (min-width: 1182px) {
 
     .hero {
         position: relative;
@@ -144,7 +152,7 @@
     .hero__bg {
         position: absolute;
         background-image: url("../img/hero.png");
-        top: -10%;/*empezar un poco más arriba para tener margen de movimiento para parallax*/
+        top: -10%; /*empezar un poco más arriba para tener margen de movimiento para parallax*/
         left: 0;
         width: 100%;
         height: 180%;
@@ -184,4 +192,4 @@
     }
 
 
-}
+} 
