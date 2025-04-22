@@ -1,28 +1,26 @@
-
 /* Estilos del Main */
 
 .main {
     width: 100%;
     overflow: hidden;
-    
+
 }
 
 .main__img {
     width: 100vw;
     padding-bottom: 24px;
-    background-color: var(--white);
     display: flex;
     justify-content: center;
 }
 
-.main__img img{
+.main__img img {
 
     width: 100%;
     height: 600px;
     object-fit: cover;
     object-position: center;
-    
-    
+
+
 }
 
 .main__contenido {
@@ -32,8 +30,7 @@
     text-align: left;
     align-content: center;
     padding: 24px;
-    width: 100%;
-    height: 100%;
+
 
 }
 
@@ -48,15 +45,23 @@
     line-height: 1.8;
 }
 
+
+
 .main__buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 32px 24px 28px;
-    gap:24px;
-    max-width: 400px;
-   
+    gap: 24px;
+    
 }
+.main__buttons .button {
+    width: 300px;
+}
+
+
 
 
 
@@ -64,7 +69,7 @@
 
 /* Estilos del Hero para pantallas grandes */
 
- @media (min-width: 1180px) {
+@media (min-width: 1180px) {
 
     .main {
         padding-top: 80px;
@@ -73,22 +78,16 @@
         display: flex;
         justify-content: flex-end;
         align-items: stretch;
-        
-        }
+
+    }
 
 
-    .main__img {    
+    .main__img {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-       
-        z-index: 0;
-        padding-bottom: 0px;
-        
-
-
     }
 
     .main__img img {
@@ -98,29 +97,26 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        display: block;
-        z-index: 0;
+        
     }
+    
+   
 
 
     .main__contenido {
-        position: relative;
-        z-index: 1;        
+        position: relative;        
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: var(--beige-400);
+        background-color: rgba(234, 227, 217, 0.9); /* Lo ponemos así para aplicar la transparencia solo al fondo, sin afectar a los botones hijos. La conversión de beige-600 a rgba(234, 227, 217, 0.9) la pregunté a chat gpt */
         color: var(--gray);
         font-family: 'Montserrat', sans-serif;
         text-align: left;
-        opacity: 0.9;
+        
         padding: 24px 60px 40px;
         width: 50%;
         height: 100%;
         box-shadow: var(--box-shadow);
-        
-
-
     }
 
 
@@ -134,20 +130,26 @@
         line-height: 1.8;
     }
 
-
     .main__buttons {
         display: flex;
-        gap: 40px;
-        padding-top: 32px;
-        padding-bottom: 28px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
     }
-
-    .button {
-        opacity: 1;
-        z-index: 4;
+    .main__buttons .button {
+        width: 250px;
     }
     
 
-    
+  
+
+
+  
+
+  
+
+
 
 }
+
