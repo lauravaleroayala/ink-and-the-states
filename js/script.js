@@ -50,33 +50,13 @@ lista_items.forEach(item => {
 //     Script para efecto Parallax en la img del hero de index.html (Home)
 // ------------------------------------------------------------------------
 
-function ParallaxEffect() {
+window.addEventListener('scroll', () => {
     const parallaxBg = document.querySelector("#parallax__bg");
-
-
-
-    window.addEventListener('scroll', () => {
-        let scrollPos = window.scrollY;
-        console.log(scrollPos);
-        //mover el fondo
-        //velocidad 0.5 significa que se mueve al 50% de la velocidad del scroll
-        parallaxBg.style.transform = `translateY(${scrollPos * 0.5}px) `;
-
-
-
-    });
-
-
-}
-
-
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !window.matchMedia('(min-width: 1182px)').matches) {
-   // no aplicar efectos de parallax si está en una pantalla pequeña o se ha elegido la opción de reducir animaciones
-    console.log("No aplicar parallax");
-
-} else {
-    //aplicar efectos de parallax
-    ParallaxEffect();
-    console.log("Aplicar parallax");
-}
-
+  
+    if (window.innerWidth > 1182) {
+      let scrollPos = window.scrollY;
+      parallaxBg.style.transform = `translateY(${scrollPos * 0.5}px)`;
+    } else {
+      parallaxBg.style.transform = 'translateY(0px)';
+    }
+  });
