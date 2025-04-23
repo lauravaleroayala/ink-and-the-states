@@ -121,10 +121,10 @@
 .card__bottom {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 24px;
     justify-content: center;
     align-content: center;
-    padding: 12px;
+    padding: 20px;
 }
 
 

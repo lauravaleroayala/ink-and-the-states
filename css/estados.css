@@ -81,8 +81,10 @@
     box-shadow: var(--box-shadow);
     border-radius: 8px;
     text-align: center;
-    color: var(--beige-900)
+    color: var(--beige-900);
+
 }
+
 
 .tab.abierto {
     border: 3px solid var(--beige-600);
