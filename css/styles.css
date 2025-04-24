@@ -75,56 +75,61 @@
 /* Estilos de los botones */
 
 .button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none; /* Elimina subrayado en enlaces */
     background-color: var(--beige-900);
-    padding: 10px 24px;
     color: var(--white);
     border-radius: 12px;
-    border:1px solid var(--beige-400);
+    border: 1px solid var(--beige-400);
     box-shadow: var(--box-shadow);
     width: 100%;
-    height: 48px; /* Las directrices de Material Design recomiendan un área táctil mínima de 48 x 48 px */
-    
-    
-}
+     
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--font-button);
+    font-weight: 400;
 
+
+    height: 48px; /* Las directrices de Material Design recomiendan un área táctil mínima de 48 x 48 px */
+    line-height: 48px; /* Alineación vertical del texto (porque estamos usando <a> ) la misma que el height*/
+    padding: 0 24px; /* No pongo padding arriba y abajo al usar line-height */
+}
 
 .button--secondary {
     background-color: var(--beige-400);
     color: var(--beige-900);
-    border:1px solid var(--beige-900);
-    
+    border: 1px solid var(--beige-900);
 }
-
-
-
 
 /* Estilos de los hover */
 
-a:hover {
-    font-weight: 600;
-    text-decoration: underline;
-    color: var(--beige-900);
-    cursor: pointer;
-}
 
-button:hover {
+.button:hover {
     font-weight: 600;
     color: var(--beige-400);
     box-shadow: 1px 1px 5px rgba(118, 118, 118, 0.539);
     cursor: pointer;
-
 }
-
 
 
 .button--secondary:hover {
-    font-weight: 600;
     color: var(--beige-900);
-    box-shadow: 1px 1px 5px rgba(118, 118, 118, 0.539);
-    cursor: pointer;
 }
 
 
+.footer__link:hover  {
+    font-weight: 600;
+    color: var(--beige-900);
+    cursor: pointer;
+
+}
+
+.header__link:hover{
+
+    font-weight: 600;
+    color: var(--beige-900);
+    cursor: pointer;
+}
 
 /* Estilos generales */
 

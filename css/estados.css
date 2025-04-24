@@ -82,8 +82,19 @@
     border-radius: 8px;
     text-align: center;
     color: var(--beige-900);
+    transition: transform 0.3s ease; /* Para que se haga más grande al hacer hover, de una manera suave */
+
+
 
 }
+
+.tab:hover{
+    transform: scale(1.03); /* Para que se haga más grande al hacer hover */
+    
+}
+
+
+
 
 
 .tab.abierto {
@@ -107,13 +118,7 @@
 /* Estilos del botón */
 
 .button {
-    background-color: var(--beige-900);
-    padding: 10px 24px;
-    color: var(--white);
-    border-radius: 12px;
-    border:1px solid var(--beige-400);
-    box-shadow: var(--box-shadow);
-    width: 100%;
+    width: 250px;
     margin-top: 40px;
     margin-bottom: 48px;
     

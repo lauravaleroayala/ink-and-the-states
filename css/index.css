@@ -48,52 +48,61 @@
 
 
 
-/* Estilos de Galería / Carrousel */
+/* Estilos del apartado principal con últimos relatos subidos  */
 
-.galeria {
+.main {
     padding: 24px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.main__contenido {
     display: flex;
     flex-direction: column;
 }
 
-.galeria__texto {
+.texto {
     margin-top: 24px;
     margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-self: center;
 
 }
 
-.galeria__textoTitulo {
+.texto__titulo {
     font-size: var(--font-h2);
     line-height: 1.6;
     color: var(--gray);
     font-family: 'Montserrat', sans-serif;
 }
 
-.galeria__textoSubtitulo {
+.texto__subtitulo {
     font-size: var(--font-body);
     line-height: 3;
     color: var(--gray);
     font-family: 'Montserrat', sans-serif;
 }
 
-.carrousel {
+
+/* Estilos de la Card */
+
+.card__container {
     width: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
-    gap: 80px;
+    flex-direction: column;
+    gap: 48px;
 
     align-items: center;
 
-    overflow: hidden;
+    justify-content: center;
 
-    justify-content: flex-start;
-    padding-bottom: 120px;
 }
 
 
 
 
-/* Estilos de la Card */
 
 
 .card {
@@ -101,13 +110,22 @@
     border-radius: 24px;
     box-shadow: var(--box-shadow);
     background-color: var(--beige-400);
+    transition: transform 0.2s ease; /* Para que se haga un poco más grande al pasar el mouse sobre ella, de una manera suave */
+}
+
+.card:hover{
+    transform: scale(1.01); /* Para que se haga un poco más grande al pasar el mouse sobre ella */
+    
 }
 
 .card__img {
     height: 200px;
     width: 200px;
     border-radius: 22px 22px 0 0;
+    object-fit: cover;
 }
+
+
 
 .card__tittle {
     font-size: var(--font-h3);
@@ -124,7 +142,22 @@
     gap: 24px;
     justify-content: center;
     align-content: center;
-    padding: 20px;
+    padding: 16px;
+}
+
+
+.button__container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 80px 0;
+
+}
+
+.button {
+    max-width: 250px;
 }
 
 
@@ -132,6 +165,24 @@
 /* Media queries */
 
 /* Estilos del Hero para pantallas grandes */
+
+@media (min-width: 864px) {
+
+    .texto {
+        text-align: center;
+    
+    }
+    
+
+    .card__container {
+        
+        display: flex;
+        flex-direction: row;       
+    
+    }
+
+
+}
 
 @media (min-width: 1182px) {
 
@@ -192,4 +243,8 @@
     }
 
 
+
+
+
 }
+

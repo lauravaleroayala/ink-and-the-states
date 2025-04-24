@@ -109,7 +109,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: rgba(234, 227, 217, 0.9); /* Lo ponemos así para aplicar la transparencia solo al fondo, sin afectar a los botones hijos. La conversión de beige-600 a rgba(234, 227, 217, 0.9) la pregunté a chat gpt */
+        background-color: rgba(234, 227, 217, 0.94); /* Lo ponemos así para aplicar la transparencia solo al fondo, sin afectar a los botones hijos. La conversión de beige-600 a rgba(234, 227, 217, 0.9) la pregunté a chat gpt */
         color: var(--gray);
         font-family: 'Montserrat', sans-serif;
         text-align: left;
@@ -142,14 +142,6 @@
         width: 250px;
     }
     
-
-  
-
-
-  
-
-  
-
 
 
 }

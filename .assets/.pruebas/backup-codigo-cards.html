@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            /* Estilos de Galería  */
+
+.galeria {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria__texto {
+    margin-top: 24px;
+    margin-bottom: 48px;
+
+}
+
+.galeria__textoTitulo {
+    font-size: var(--font-h2);
+    line-height: 1.6;
+    color: var(--gray);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.galeria__textoSubtitulo {
+    font-size: var(--font-body);
+    line-height: 3;
+    color: var(--gray);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card__container {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 80px;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
+
+
+
+/* Estilos de la Card */
+
+
+.card {
+    border: 2px solid var(--beige-900);
+    border-radius: 24px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--beige-400);
+}
+
+.card__img {
+    height: 200px;
+    width: 200px;
+    border-radius: 22px 22px 0 0;
+}
+
+.card__tittle {
+    font-size: var(--font-h3);
+    color: var(--gray);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+
+}
+
+.card__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="card">
+        <img src="./img/card-california.png" alt="California" class="card__img" loading="lazy">
+        <div class="card__bottom">
+            <p class="card__tittle">CALIFORNIA</p>
+            <a href="./california.html" title="Leer California" class="button">LEER</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/card-florida.png" alt="Florida" class="card__img" loading="lazy">
+        <div class="card__bottom">
+            <p class="card__tittle">FLORIDA</p>
+            <a href="./florida.html" title="Leer Florida" class="button">LEER</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/card-illinois.png" alt="Illinois" class="card__img" loading="lazy">
+        <div class="card__bottom">
+            <p class="card__tittle">ILLINOIS</p>
+            <a href="./illinois.html" title="Leer Illinois" class="button">LEER</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/card-michigan.png" alt="Michigan" class="card__img" loading="lazy">
+        <div class="card__bottom">
+            <p class="card__tittle">MICHIGAN</p>
+            <a href="./michigan.html" title="Leer Michigan" class="button">LEER</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/card-missouri.png" alt="Missouri" class="card__img" loading="lazy">
+        <div class="card__bottom">
+            <p class="card__tittle">MISSOURI</p>
+            <a href="./missouri.html" title="Leer Missouri" class="button">LEER</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/card-vegas.png" alt="Nevada" class="card__img" loading="lazy">
+        <div class="card__bottom">
+            <p class="card__tittle">NEVADA</p>
+            <a href="./nevada.html" title="Leer Nevada" class="button">LEER</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/card-ny.png" alt="New York" class="card__img" loading="lazy">
+        <div class="card__bottom">
+            <p class="card__tittle">NEW YORK</p>
+            <a href="./ny.html" title="Leer New York" class="button">LEER</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/card-texas.png" alt="Texas" class="card__img" loading="lazy">
+        <div class="card__bottom">
+            <p class="card__tittle">TEXAS</p>
+            <a href="./texas.html" title="Leer Texas" class="button">LEER</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./img/card-utah.png" alt="Utah" class="card__img" loading="lazy">
+        <div class="card__bottom">
+            <p class="card__tittle">UTAH</p>
+            <a href="./utah.html" title="Leer Utah" class="button">LEER</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+     <!-- Galería -->
+
+     <div class="galeria">
+        <div class="galeria__texto">
+            <p class="galeria__textoTitulo">Explora los últimos estados visitados</p>
+            <p class="galeria__textoSubtitulo">Inspírate con los relatos más recientes</p>
+        </div>
+
+
+        <!-- Cards últimos estados visitados -->
+
+        <div class="card__container">
+
+            <div class="card">
+                <img src="./img/card-new-mexico.png" alt="New Mexico" class="card__img" loading="lazy">
+                <div class="card__bottom">
+                    <p class="card__tittle">NEW MEXICO</p>
+                    <a href="./nm.html" title="Leer New Mexico" class="button">LEER</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="./img/card-arizona.png" alt="Arizona" class="card__img" loading="lazy">
+                <div class="card__bottom">
+                    <p class="card__tittle">ARIZONA</p>
+                    <a href="./arizona.html" title="Leer Arizona" class="button">LEER</a>
+                </div>
+            </div>
+
+                   
+
+            <div class="card">
+                <img src="./img/card-wyoming.png" alt="Wyoming" class="card__img" loading="lazy">
+                <div class="card__bottom">
+                    <p class="card__tittle">WYOMING</p>
+                    <a href="./wyoming.html" title="Leer Wyoming" class="button">LEER</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    
+</body>
+</html>
