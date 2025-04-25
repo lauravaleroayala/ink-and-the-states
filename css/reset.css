@@ -1,9 +1,9 @@
 /* ----------------------------------*/
-/*         RESET DE CSS              */
+/*            RESET DE CSS           */
 /* ----------------------------------*/
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* para incluir el padding y el border en el total del width y el height de los elementos */
 }

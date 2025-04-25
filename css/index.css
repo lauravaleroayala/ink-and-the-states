@@ -1,4 +1,6 @@
-/* Estilos del Hero */
+/* ----------------------------------*/
+/*          Estilos del hero         */
+/* ----------------------------------*/
 
 
 .hero {
@@ -7,6 +9,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    /* si hay contenido que se desborda, ocultar  */
 
 
 }
@@ -16,7 +19,9 @@
     width: 100%;
     height: 600px;
     background-size: cover;
+    /* la img cubre todo el contenedor  */
     background-position: left;
+    /* y se posiciona a la izquierda  */
 
 }
 
@@ -26,8 +31,8 @@
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     align-content: center;
-    padding: 24px;
-    padding-bottom: 40px;
+    padding: 24px 24px 40px 24px;
+    /* 40 px abajo  */
     width: 100%;
     height: 100%;
 
@@ -37,23 +42,26 @@
 .hero__titulo {
     font-size: var(--font-h1);
     line-height: 3;
+    /* para que haya más separación entre lineas  */
 }
 
 
 .hero__body {
     font-size: var(--font-body);
     line-height: 1.8;
+    /* para que haya más separación entre lineas  */
 }
 
 
 
-
+/* ------------------------------------------------------------*/
 /* Estilos del apartado principal con últimos relatos subidos  */
+/* ------------------------------------------------------------*/
+
 
 .main {
     padding: 24px;
-    /* display: flex;
-    flex-direction: column; */
+
 }
 
 .main__contenido {
@@ -62,8 +70,7 @@
 }
 
 .texto {
-    margin-top: 24px;
-    margin-bottom: 48px;
+    margin: 24px 0 48px 0;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -74,6 +81,7 @@
 .texto__titulo {
     font-size: var(--font-h2);
     line-height: 1.6;
+    /* para que haya más separación entre lineas  */
     color: var(--gray);
     font-family: 'Montserrat', sans-serif;
 }
@@ -81,12 +89,15 @@
 .texto__subtitulo {
     font-size: var(--font-body);
     line-height: 3;
+    /* para que haya más separación entre lineas  */
     color: var(--gray);
     font-family: 'Montserrat', sans-serif;
 }
 
 
-/* Estilos de la Card */
+/* ----------------------------------*/
+/*        Estilos del la card        */
+/* ----------------------------------*/
 
 .card__container {
     width: 100%;
@@ -101,21 +112,19 @@
 }
 
 
-
-
-
-
 .card {
     border: 2px solid var(--beige-900);
     border-radius: 24px;
     box-shadow: var(--box-shadow);
     background-color: var(--beige-400);
-    transition: transform 0.2s ease; /* Para que se haga un poco más grande al pasar el mouse sobre ella, de una manera suave */
+    transition: transform 0.2s ease;
+    /* Para que se haga un poco más grande al pasar el mouse sobre ella, de una manera suave */
 }
 
-.card:hover{
-    transform: scale(1.01); /* Para que se haga un poco más grande al pasar el mouse sobre ella */
-    
+.card:hover {
+    transform: scale(1.01);
+    /* Para que se haga un poco más grande al pasar el mouse sobre ella */
+
 }
 
 .card__img {
@@ -151,18 +160,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
     padding: 80px 0;
 
 }
 
 .button {
     max-width: 250px;
+    /* ancho máximo del botón de 250px */
 }
 
 
 
-/* Media queries */
+/* ----------------------------------*/
+/*          Media quieries           */
+/* ----------------------------------*/
 
 /* Estilos del Hero para pantallas grandes */
 
@@ -170,15 +181,17 @@
 
     .texto {
         text-align: center;
-    
+        /* En pantallas grandes, centramos el texto */
+
     }
-    
+
 
     .card__container {
-        
+
         display: flex;
-        flex-direction: row;       
-    
+        flex-direction: row;
+        /* y ponemos las cards una al lado de la otra */
+
     }
 
 
@@ -193,7 +206,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-
+        /*alineamos a la derecha */
         padding-right: 1.5rem;
 
     }
@@ -203,11 +216,12 @@
         position: absolute;
         background-image: url("../img/hero.jpg");
         top: -10%;
-        /*empezar un poco más arriba para tener margen de movimiento para parallax*/
+        /*empezamos un poco más arriba para tener margen de movimiento para parallax*/
         left: 0;
         width: 100%;
         height: 180%;
         background-size: cover;
+        /*para que cubra todo el espacio que tiene*/
         background-position: center;
 
 
@@ -217,12 +231,14 @@
     .hero__contenido {
         position: relative;
         z-index: 1;
+        /*contenido encima de la foto*/
         padding: 20px;
         background-color: var(--beige-400);
         color: var(--gray);
         font-family: 'Montserrat', sans-serif;
         text-align: left;
         opacity: 0.9;
+        /*un poco de transparencia para que se vea la foto por detrás*/
         padding: 60px;
         width: 40%;
         height: 100%;
@@ -235,11 +251,13 @@
     .hero__titulo {
         font-size: var(--font-h1);
         line-height: 3;
+        /* para que haya más separación entre lineas  */
     }
 
     .hero__body {
         font-size: var(--font-body);
         line-height: 1.8;
+        /* para que haya más separación entre lineas  */
     }
 
 
@@ -247,4 +265,3 @@
 
 
 }
-

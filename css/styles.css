@@ -1,5 +1,10 @@
 
-/* Estilos del header */
+/*          Estilos comunes para todas las páginas        */
+
+
+/* ----------------------------------*/
+/*        Estilos del header         */
+/* ----------------------------------*/
 
 .header {
     background-color: var(--beige-600);
@@ -10,9 +15,11 @@
     height: 80px;
     width: 100%;
     position: fixed;
+    /* el header siempre estará fijo en pantalla*/
     top: 0;
     left: 0;
     z-index: 2;
+    /* y quedará por encima del resto */
     box-shadow: var(--box-shadow);
 
 }
@@ -20,11 +27,12 @@
 .header__logo {
     width: 73px;
     height: 73px;
-    align-content: center;
+
 }
 
 .header__link {
     text-decoration: none;
+    /* quitar el subrayado */
     font-family: 'Montserrat', sans-serif;
     font-size: var(--font-body);
     color: var(--gray);
@@ -34,9 +42,12 @@
 .header__nav {
     display: flex;
     gap: 1.5rem;
+    /* espacio entre ambos elementos */
 }
 
-/* Estilos del footer */
+/* ----------------------------------*/
+/*          Estilos del footer       */
+/* ----------------------------------*/
 
 .footer {
     background-color: var(--beige-600);
@@ -47,18 +58,20 @@
     align-items: center;
     padding: 1.5rem;
     width: 100%;
-    
+    /* todo el ancho */
+
 
 }
 
 .footer__logo {
     width: 100px;
     height: 100px;
-    
+
 }
 
 .footer__link {
     text-decoration: underline;
+    /* subrayamos para que se note que es un enlace */
     font-family: 'Montserrat', sans-serif;
     font-size: var(--font-body);
     color: var(--gray);
@@ -70,29 +83,39 @@
     font-size: var(--font-button);
     color: var(--gray);
     font-weight: 400;
+    /* negrita */
 }
 
-/* Estilos de los botones */
+/* ----------------------------------*/
+/*       Estilos de los botones      */
+/* ----------------------------------*/
 
 .button {
     display: inline-block;
+    /* se comporta como inline pero podemos añadir width y height */
     text-align: center;
-    text-decoration: none; /* Elimina subrayado en enlaces */
+    text-decoration: none;
+    /* elimina subrayado  */
     background-color: var(--beige-900);
     color: var(--white);
     border-radius: 12px;
     border: 1px solid var(--beige-400);
     box-shadow: var(--box-shadow);
     width: 100%;
-     
+    /* de manera general, ocupa todo el ancho disponible  */
+
     font-family: 'Montserrat', sans-serif;
     font-size: var(--font-button);
     font-weight: 400;
+    /* negrita */
 
 
-    height: 48px; /* Las directrices de Material Design recomiendan un área táctil mínima de 48 x 48 px */
-    line-height: 48px; /* Alineación vertical del texto (porque estamos usando <a> ) la misma que el height*/
-    padding: 0 24px; /* No pongo padding arriba y abajo al usar line-height */
+    height: 48px;
+    /* las directrices de Material Design recomiendan un área táctil mínima de 48 x 48 px */
+    line-height: 48px;
+    /* para la alineación vertical del texto (porque estamos usando <a> ) la misma que el height*/
+    padding: 0 24px;
+    /* no pongo padding arriba y abajo al usar line-height */
 }
 
 .button--secondary {
@@ -101,7 +124,9 @@
     border: 1px solid var(--beige-900);
 }
 
-/* Estilos de los hover */
+/* ----------------------------------*/
+/*        Estilos de los hover       */
+/* ----------------------------------*/
 
 
 .button:hover {
@@ -109,6 +134,7 @@
     color: var(--beige-400);
     box-shadow: 1px 1px 5px rgba(118, 118, 118, 0.539);
     cursor: pointer;
+    /* cambio de cursor */
 }
 
 
@@ -117,22 +143,27 @@
 }
 
 
-.footer__link:hover  {
+.footer__link:hover {
     font-weight: 600;
     color: var(--beige-900);
     cursor: pointer;
+    /* cambio de cursor */
 
 }
 
-.header__link:hover{
+.header__link:hover {
 
     font-weight: 600;
     color: var(--beige-900);
     cursor: pointer;
+    /* cambio de cursor */
 }
 
-/* Estilos generales */
+/* ----------------------------------*/
+/*          Estilos generales        */
+/* ----------------------------------*/
 
 strong {
     color: var(--beige-900)
+        /* el color del texto marcado con etiqueta strong siempre será beige 900 */
 }

@@ -15,13 +15,18 @@
 
     /* Tipografía */
 
-    --font-body: 1rem;        /* tamaño 16px */
-    --font-h1: 2.5rem;        /* tamaño 40px */
-    --font-h2: 2rem;          /* tamaño 32px */
-    --font-h3: 1.5rem;        /* tamaño 24px */
-    --font-button: 0.875rem;  /* tamaño 14px */
+    --font-body: 1rem;
+    /* tamaño 16px */
+    --font-h1: 2.5rem;
+    /* tamaño 40px */
+    --font-h2: 2rem;
+    /* tamaño 32px */
+    --font-h3: 1.5rem;
+    /* tamaño 24px */
+    --font-button: 0.875rem;
+    /* tamaño 14px */
 
-    
+
 
 
 }

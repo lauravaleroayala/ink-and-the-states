@@ -1,14 +1,19 @@
-/* Color del body */
+/* ----------------------------------*/
+/*          Color del Body           */
+/* ----------------------------------*/
 
 body {
     background-color: var(--beige-400);
 }
 
-/* Estilos del Hero */
+/* ----------------------------------*/
+/*          Estilos del hero         */
+/* ----------------------------------*/
 
 .hero {
     width: 100%;
     overflow: hidden;
+    /* si hay contenido que se desborda, ocultar  */
 }
 
 .hero__img {
@@ -19,14 +24,16 @@ body {
     justify-content: center;
 }
 
-.hero__img img{
+.hero__img img {
 
     width: 100%;
     height: 600px;
     object-fit: cover;
+    /* la img cubre todo el contenedor  */
     object-position: center;
-    
-    
+    /* y está centrada */
+
+
 }
 
 .hero__contenido {
@@ -44,29 +51,36 @@ body {
 .hero__titulo {
     font-size: var(--font-h2);
     line-height: 1.8;
+    /* para que haya más separación entre lineas  */
 }
 
 
 .hero__body {
     font-size: var(--font-body);
     line-height: 1.8;
+    /* para que haya más separación entre lineas  */
 }
 
 
 
 
-/* Estilos del título */
+
+/* ----------------------------------*/
+/*          Estilos del tíulo        */
+/* ----------------------------------*/
 
 .top {
     margin-top: 24px;
     padding: 24px;
     text-align: left;
     justify-self: center;
+    /* para que esté en el centro, pero no con el texto centrado */
 }
 
 .top__titulo {
     font-size: var(--font-h3);
     line-height: 1.6;
+    /* para que haya más separación entre lineas  */
     color: var(--gray);
     font-family: 'Montserrat', sans-serif;
 }
@@ -74,15 +88,20 @@ body {
 .top__subtitulo {
     font-size: var(--font-body);
     line-height: 1.8;
+    /* para que haya más separación entre lineas  */
     color: var(--gray);
     font-family: 'Montserrat', sans-serif;
 }
 
 
-/* Estilos del Main (acordeón) */
+
+/* ---------------------------------------------*/
+/*          Estilos del main (acordeón)         */
+/* ---------------------------------------------*/
 
 .main {
     max-width: 820px;
+    /* para que el ancho máximo sea de 820px  */
     width: 100%;
 
     display: flex;
@@ -94,9 +113,12 @@ body {
     font-size: var(--font-body);
     color: var(--gray);
     line-height: 1.8;
+    /* para que haya más separación entre lineas  */
 
     padding: 0 1rem;
+    /* 1rem a los lados  */
     margin: 0 auto;
+    /* para que se coloquen en el centro  */
 
 }
 
@@ -122,32 +144,39 @@ body {
     box-shadow: var(--box-shadow);
     background-color: var(--white);
     cursor: pointer;
-    transition: transform 0.2s ease; /* Para que se haga un poco más grande al hacer hover, de una manera suave */
+    /* cambiar el cursor cuando se pase por encima */
+    transition: transform 0.2s ease;
+    /* para que se haga un poco más grande al hacer hover, de una manera suave */
 
 
 
 }
 
-.acordeon__item:hover{
-    transform: scale(1.01); /* Para que se haga un poco más grande al hacer hover */
-    
+.acordeon__item:hover {
+    transform: scale(1.01);
+    /* para que se haga un poco más grande al hacer hover */
+
 }
 
 
 .acordeon__indice {
     display: flex;
     justify-content: flex-start;
+    /* alinear a la izquierda  */
     align-items: center;
 }
 
 .acordeon__content {
-    max-height: 0px; /* cerrado por defecto*/
+    max-height: 0px;
+    /* cerrado por defecto*/
 
-    overflow: hidden; /* ocultar contenido que se sale */
-    transition: max-height 0.6s ease; /* suavizar al abrir y cerrar */
+    overflow: hidden;
+    /* ocultar contenido que se sale */
+    transition: max-height 0.6s ease;
+    /* suavizar al abrir y cerrar */
     padding-bottom: 8px;
 
-    
+
 }
 
 
@@ -156,49 +185,54 @@ body {
 
 
 .acordeon__item.open .acordeon__content {
-    max-height: 900px; /* valor grande para cubrir el contenido del elemento con más items (Arizona), para que funcione bien la transition */
+    max-height: 900px;
+    /* valor grande para cubrir el contenido del elemento con más items (Arizona), para que funcione bien la transition */
 }
 
 
-/* Media queries  */
+
+/* ----------------------------------*/
+/*          Media queries            */
+/* ----------------------------------*/
 
 /* Estilos del Hero para pantallas grandes */
 
- @media (min-width: 1180px) {
+@media (min-width: 1180px) {
 
     .hero {
         width: 100%;
         overflow: hidden;
         display: flex;
+        /* en pantallas grandes, colocamos la imagen al lado del bloque de texto */
         padding-top: 80px;
         height: 700px;
     }
-    
+
     .hero__img {
         width: 100vw;
         height: 100%;
         padding-top: 24px;
-        
-        
-        
+
+
+
         display: flex;
         justify-content: center;
 
-        
+
     }
-    
-    .hero__img img{
-    
+
+    .hero__img img {
+
         width: 80%;
         height: 100%;
         object-fit: cover;
         object-position: center;
         box-shadow: var(--box-shadow);
-        
-        
-        
+
+
+
     }
-    
+
     .hero__contenido {
         background-color: var(--white);
         color: var(--gray);
@@ -206,33 +240,36 @@ body {
         text-align: left;
         align-content: center;
 
-        
+
         padding: 24px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: flex-start;
         flex-grow: 1;
-        
+        /* que ocupe todo el espacio que tiene disponible */
+
         width: 100%;
         height: 100%;
 
-        
-    
+
+
     }
-    
+
     .hero__titulo {
         font-size: var(--font-h2);
         line-height: 1.8;
+        /* para que haya más separación entre lineas  */
     }
-    
-    
+
+
     .hero__body {
         font-size: var(--font-body);
         line-height: 1.8;
+        /* para que haya más separación entre lineas  */
     }
-    
 
 
-    
+
+
 }

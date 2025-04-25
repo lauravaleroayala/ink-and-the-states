@@ -1,9 +1,11 @@
-
-/* Estilos del título */
+/* ----------------------------------*/
+/*         Estilos del título        */
+/* ----------------------------------*/
 
 .top {
     margin-top: 80px;
     padding: 40px 24px 12px;
+    /* padding arriba y abajo */
     text-align: left;
 }
 
@@ -13,34 +15,47 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Estilos del grid */
+/* ----------------------------------*/
+/*          Estilos del grid         */
+/* ----------------------------------*/
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* las columnas se ajustan automáticamente, ocupando como mínimo 300px */
     gap: 4px;
+    /* entre elementos 4px de separación */
     margin-bottom: 2rem;
     padding: 24px;
-    
+
 }
 
 .grid__img {
     width: 100%;
+    /* ocupar todo el ancho de la celda */
     box-shadow: var(--box-shadow);
 }
 
 .grid__img img {
     width: 100%;
+    /* ocupar todo el ancho  */
     height: auto;
+    /* la altura se ajusta para mantener la proporción  */
     object-fit: cover;
+    /* y cubre todo el contenedor  */
 
-    
+
 }
 
-/* Estilos del hover */
+/* ----------------------------------*/
+/*         Estilos del hover         */
+/* ----------------------------------*/
 
 .grid__img:hover {
     border: 4px solid white;
+    /* añadimos borde blanco al pasar el ratón */
     box-shadow: none;
+    /* quitamos la sombra  */
     cursor: pointer;
+    /* y cambiamos el cursor  */
 }
