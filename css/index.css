@@ -232,14 +232,13 @@
         position: relative;
         z-index: 1;
         /*contenido encima de la foto*/
-        padding: 20px;
         background-color: var(--beige-400);
         color: var(--gray);
         font-family: 'Montserrat', sans-serif;
         text-align: left;
         opacity: 0.9;
         /*un poco de transparencia para que se vea la foto por detrás*/
-        padding: 60px;
+        padding: 60px 60px 0;
         width: 40%;
         height: 100%;
         box-shadow: var(--box-shadow);
