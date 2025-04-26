@@ -185,7 +185,7 @@ body {
 
 
 .acordeon__item.open .acordeon__content {
-    max-height: 900px;
+    max-height: 1200px;
     /* valor grande para cubrir el contenido del elemento con más items (Arizona), para que funcione bien la transition */
 }
 
